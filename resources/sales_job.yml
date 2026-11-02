@@ -1,0 +1,11 @@
+resources:
+  jobs:
+    sales_medallion_job:
+      name: sales_streaming_medallion_job
+
+      tasks:
+        - task_key: run_sales_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.sales_pipeline.id}
+
+      max_concurrent_runs: 1
