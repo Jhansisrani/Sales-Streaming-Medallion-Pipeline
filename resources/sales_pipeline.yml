@@ -4,8 +4,7 @@ resources:
       name: sales_streaming_medallion_pipeline_bundle
       catalog: ${var.catalog}
       schema: ${var.schema}
-      serverless: true
-      development: true
+      serverless: true     
       continuous: false
 
       libraries:
