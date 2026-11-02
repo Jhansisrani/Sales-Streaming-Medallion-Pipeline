@@ -6,7 +6,7 @@ resources:
       schema: ${var.schema}
       serverless: true     
       continuous: false
-
+      
       libraries:
         - glob:
             include: ../src/**
